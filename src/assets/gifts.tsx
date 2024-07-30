@@ -52,7 +52,8 @@ export const Gifts = [{
 {
     type: "image",
     content: "../../public/fun1.jpeg",
-    message: "É nos momentos de descontração que percebo como nossa conexão é única e especial."
+    message: "É nos momentos de descontração que vejo como nossa conexão é incrível.",
+    desktopMessage: "Em meio aos momentos de descontração, é quando realmente percebo o quão única e especial é a nossa conexão. É nos sorrisos compartilhados, nas conversas despretensiosas e nos olhares cúmplices que sinto a profundidade do que temos. Cada instante ao seu lado é uma lembrança preciosa, um tesouro que guardo com carinho. Nossa jornada juntos é marcada por esses pequenos e valiosos momentos, que reforçam a certeza de que o nosso laço é verdadeiramente especial. A cada dia, sou grato por ter alguém como você para compartilhar esses fragmentos de felicidade e criar memórias inesquecíveis."
 },
 {
     type: "video",

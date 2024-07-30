@@ -9,11 +9,12 @@ function App() {
     type: string;
     content: string;
     message?: string;
+    desktopMessage?: string;
   } | null>(null);
 
   const handleOpenBox = () => {
     const rand_const = Math.floor(Math.random() * Gifts.length);
-    const randomSurprise = Gifts[13];
+    const randomSurprise = Gifts[rand_const];
     setSurprise(randomSurprise);
     setIsOpen(true);
   };
