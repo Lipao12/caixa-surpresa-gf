@@ -43,9 +43,10 @@ export const Gifts = [
               Minha pequena, és minha amada 🤍`,
   },
   {
-    type: "message",
-    content:
-      "Diante do verdadeiro amor, você não desiste.\nMesmo que o objeto do seu afeto esteja implorando para você.\nEu sou Filipe Mai. E eu te amo.",
+    type: "image",
+    content: "./chu1.jpg",
+    message:
+      "Diante do verdadeiro amor, você não desiste.\nMesmo que o objeto do seu afeto esteja implorando para você.",
   },
   {
     type: "message",
@@ -56,6 +57,12 @@ export const Gifts = [
     type: "image",
     content: "/we1.jpeg",
     message: "Momentos simples ao seu lado são os mais especiais.",
+  },
+  {
+    type: "image",
+    content: "/we2.jpeg",
+    message:
+      "Na próxima vez que se esquecer de que você é Duda Salgado, lembre-se de que eu sou Filipe Mai e que eu te amo",
   },
   {
     type: "message",
@@ -75,8 +82,7 @@ export const Gifts = [
   {
     type: "image",
     content: "/closeup.jpeg",
-    message:
-      "Cada detalhe do seu rosto é uma obra de arte que amo admirar todos os dias.",
+    message: "Cada detalhe do seu rosto é uma obra de arte que amo admirar",
   },
   {
     type: "image",

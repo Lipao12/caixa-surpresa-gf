@@ -6,6 +6,7 @@ import SurpriseContent from "./components/SurpriseContent";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isTheMain, setIsTheMain] = useState(false);
   const [surprises, setSurprises] = useState(Gifts);
   const [surprise, setSurprise] = useState<
     | {
@@ -21,6 +22,7 @@ function App() {
   const handleOpenBox = () => {
     setSurprise(MainGift);
     setIsOpen(true);
+    setIsTheMain(true);
   };
 
   const handleOpenBoxForGifts = async () => {
@@ -47,6 +49,7 @@ function App() {
     setSurprises(updatedSurprises);
 
     setIsOpen(true);
+    setIsTheMain(false);
   };
 
   const closeBox = () => {
@@ -76,16 +79,30 @@ function App() {
           <li>🤍</li>
         </ul>
       </div>
+      {isOpen && (
+        <button
+          type="button"
+          onClick={closeBox}
+          className="absolute top-0 left-0 mt-4 ml-4 text-white bg-gray-800 rounded-full px-3 py-1 hover:bg-gray-700 transition duration-200"
+        >
+          Voltar
+        </button>
+      )}
       <div className="relative">
         {isOpen ? (
           <div
-            onClick={closeBox}
+            onClick={isTheMain ? () => {} : handleOpenBoxForGifts}
             className="transition-opacity duration-500 opacity-0 fade-in space-y-10"
             onAnimationEnd={(e) =>
               e.currentTarget.classList.remove("opacity-0")
             }
           >
             <SurpriseContent content={surprise} />
+            {surprises.length + 1 === Gifts.length && (
+              <span className="absolute bottom-2 right-2 flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+              </span>
+            )}
           </div>
         ) : (
           <div

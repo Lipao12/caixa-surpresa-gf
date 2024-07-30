@@ -15,8 +15,6 @@ interface SurpriseContentProps {
 const SurpriseContent: React.FC<SurpriseContentProps> = ({ content }) => {
   if (!content) return null;
 
-  console.log(content);
-
   const isImage = content.type === "image";
   const isMusic = content.type === "music";
   const isVideo = content.type === "video";
