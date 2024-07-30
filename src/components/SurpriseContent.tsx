@@ -45,14 +45,30 @@ const SurpriseContent: React.FC<SurpriseContentProps> = ({ content }) => {
         </div>
       )}
       {isMusic && (
-        <a
-          href={content.content}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 m-5"
-        >
-          Ouça a música!
-        </a>
+        <div className="flex flex-col">
+          {/* Embed the Spotify player */}
+          <div className="w-full mb-4">
+            <iframe
+              src={`https://open.spotify.com/embed/track/${new URL(
+                content.content
+              ).pathname
+                .split("/")
+                .pop()}`}
+              width="100%"
+              height="80"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+              allowFullScreen
+              title="Spotify Track"
+            ></iframe>
+          </div>
+          {content.message &&
+            content.message.split("\n").map((line, index) => (
+              <p key={index} className="text-lg mt-2 text-justify">
+                {line}
+              </p>
+            ))}
+        </div>
       )}
       {isVideo && (
         <div>

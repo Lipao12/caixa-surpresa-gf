@@ -1,6 +1,6 @@
 export const MainGift = {
   type: "video",
-  content: "../../public/lovevideo1.mp4",
+  content: "/lovevideo1.mp4",
   message: "",
 };
 export const GiftsTst = [
@@ -11,6 +11,7 @@ export const GiftsTst = [
   {
     type: "music",
     content: "https://open.spotify.com/intl-pt/track/2TE9rkhJYDctxgzak0AnSb",
+    message: "Muito massa",
   },
 ];
 export const Gifts = [
@@ -21,6 +22,8 @@ export const Gifts = [
   {
     type: "music",
     content: "https://open.spotify.com/intl-pt/track/2TE9rkhJYDctxgzak0AnSb",
+    message:
+      "O seu astral é algo sensácional, que mesmo longe de você já fico mais animado 😊",
   },
   {
     type: "message",
@@ -28,12 +31,16 @@ export const Gifts = [
   },
   {
     type: "image",
-    content: "../../public/we3.jpeg",
+    content: "/we3.jpeg",
     message: "Com você, todos os momentos se tornam inesquecíveis 🤍",
   },
   {
     type: "music",
     content: "https://open.spotify.com/intl-pt/track/4uP1r2VQUD6qWail7dmeG7",
+    message: `Sou teu ego, tua alma\n
+              Sou teu céu, o teu inferno, a tua calma\n
+              Eu sou teu tudo, sou teu nada\n
+              Minha pequena, és minha amada 🤍`,
   },
   {
     type: "message",
@@ -47,7 +54,7 @@ export const Gifts = [
   },
   {
     type: "image",
-    content: "../../public/we1.jpeg",
+    content: "/we1.jpeg",
     message: "Momentos simples ao seu lado são os mais especiais.",
   },
   {
@@ -57,20 +64,23 @@ export const Gifts = [
   {
     type: "music",
     content: "https://open.spotify.com/intl-pt/track/13UY9fXJBE32mR6GUhYIfO",
+    message: "O que você fez em mim é algo totalmente incondicional 💖",
   },
   {
     type: "music",
     content: "https://open.spotify.com/intl-pt/track/7EgRqkvNThCaCJB0lhyZH5",
+    message:
+      "Desde que começamos a conversar pelo instagram, vários sinais mostraram que você era a pessoa certa para mim",
   },
   {
     type: "image",
-    content: "../../public/closeup.jpeg",
+    content: "/closeup.jpeg",
     message:
       "Cada detalhe do seu rosto é uma obra de arte que amo admirar todos os dias.",
   },
   {
     type: "image",
-    content: "../../public/fun1.jpeg",
+    content: "/fun1.jpeg",
     message:
       "É nos momentos de descontração que vejo como nossa conexão é incrível.",
     desktopMessage:
@@ -78,7 +88,7 @@ export const Gifts = [
   },
   {
     type: "video",
-    content: "../../public/lovevideo.mp4",
+    content: "/lovevideo.mp4",
     message: "Por momentos assim que faz eu te amar cada vez mais.",
   },
 ];
