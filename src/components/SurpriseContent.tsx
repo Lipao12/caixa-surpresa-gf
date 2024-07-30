@@ -20,26 +20,17 @@ const SurpriseContent: React.FC<SurpriseContentProps> = ({ content }) => {
   const isVideo = content.type === "video";
 
   return (
-    <div className="p-4 bg-white rounded shadow-md m-2">
+    <div className="p-4 bg-white rounded shadow-md m-2 md:max-w-4xl">
       {isImage && (
         <div className="md:flex md:flex-row ">
           <img
             src={content.content}
             alt="Surprise"
-            className="w-full md:w-1/2 h-auto  mb-4"
+            className="w-full h-auto md:w-96 md:h-72 object-cover mb-4"
           />
-          <p
-            className={`text-lg text-center block md:ml-10 ${
-              content.desktopMessage && "md:hidden"
-            }`}
-          >
+          <p className={`text-lg text-center block md:ml-10`}>
             {content.message}
           </p>
-          {content.desktopMessage && (
-            <p className="text-lg text-center text-justify ml-11 hidden md:block">
-              {content.desktopMessage}
-            </p>
-          )}
         </div>
       )}
       {isMusic && (
