@@ -1,3 +1,18 @@
+export const MainGift = {
+  type: "video",
+  content: "../../public/lovevideo1.mp4",
+  message: "",
+};
+export const GiftsTst = [
+  {
+    type: "message",
+    content: "Cada dia ao seu lado é um presente que agradeço de coração.",
+  },
+  {
+    type: "music",
+    content: "https://open.spotify.com/intl-pt/track/2TE9rkhJYDctxgzak0AnSb",
+  },
+];
 export const Gifts = [
   {
     type: "message",
@@ -32,7 +47,7 @@ export const Gifts = [
   },
   {
     type: "image",
-    content: "../../public/we2.jpeg",
+    content: "../../public/we1.jpeg",
     message: "Momentos simples ao seu lado são os mais especiais.",
   },
   {

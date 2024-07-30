@@ -6,11 +6,8 @@ interface SurpriseBoxProps {
 
 const SurpriseBox = ({ onOpen }: SurpriseBoxProps) => {
   return (
-    <div
-      className="relative flex items-center justify-center cursor-pointer"
-      onClick={onOpen}
-    >
-      <div className="gift"></div>
+    <div className="relative flex items-center justify-center ">
+      <div className="gift cursor-pointer" onClick={onOpen}></div>
     </div>
   );
 };
