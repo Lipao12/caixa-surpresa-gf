@@ -14,7 +14,7 @@ function App() {
 
   const handleOpenBox = () => {
     const rand_const = Math.floor(Math.random() * Gifts.length);
-    const randomSurprise = Gifts[rand_const];
+    const randomSurprise = Gifts[12];
     setSurprise(randomSurprise);
     setIsOpen(true);
   };
