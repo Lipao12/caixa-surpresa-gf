@@ -1,12 +1,15 @@
 import React from "react";
 
 interface SurpriseContentProps {
-  content: {
-    type: string;
-    content: string;
-    message?: string;
-    desktopMessage?: string;
-  } | null;
+  content:
+    | {
+        type: string;
+        content: string;
+        message?: string;
+        desktopMessage?: string;
+      }
+    | null
+    | undefined;
 }
 
 const SurpriseContent: React.FC<SurpriseContentProps> = ({ content }) => {
