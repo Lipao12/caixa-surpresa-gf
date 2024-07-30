@@ -7,12 +7,16 @@ import SurpriseContent from "./components/SurpriseContent";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [surprises, setSurprises] = useState(Gifts);
-  const [surprise, setSurprise] = useState<{
-    type: string;
-    content: string;
-    message?: string;
-    desktopMessage?: string;
-  } | null>();
+  const [surprise, setSurprise] = useState<
+    | {
+        type: string;
+        content: string;
+        message?: string;
+        desktopMessage?: string;
+      }
+    | null
+    | undefined
+  >();
 
   const handleOpenBox = () => {
     setSurprise(MainGift);
