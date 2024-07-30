@@ -32,7 +32,7 @@ function App() {
         {
           type: "message",
           content:
-            "Criatividade acabou, meu bem. 😳🙄😶\n Se quiser ver as mensagens de novo tu tem que atualizar a página.\n Ahh, só mais uma coisa, espero que tenha percebido algumas frases de música que utilizei (sem ser nas músicas) e a referência a serie Gossip 😉 \n É noix, minha minha gata! 🤍",
+            "Criatividade acabou, meu bem. 😳🙄😶\n Se quiser ver as mensagens de novo tu tem que atualizar a página.\n Ahh, só mais uma coisa, espero que tenha percebido algumas frases de música que utilizei (sem ser nas músicas) e a referência a serie Gossip 😉 \n É noix, minha gata! 🤍",
         },
       ];
     }

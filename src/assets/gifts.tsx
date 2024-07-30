@@ -65,10 +65,6 @@ export const Gifts = [
       "Na próxima vez que se esquecer de que você é Duda Salgado, lembre-se de que eu sou Filipe Mai e que eu te amo",
   },
   {
-    type: "message",
-    content: "Fico sozinho pensando em você.\nVejo imagens, retratos de nós.",
-  },
-  {
     type: "music",
     content: "https://open.spotify.com/intl-pt/track/13UY9fXJBE32mR6GUhYIfO",
     message: "O que você fez em mim é algo totalmente incondicional 💖",
