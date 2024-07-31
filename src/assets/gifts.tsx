@@ -64,17 +64,16 @@ export const Gifts = [
   {
     type: "image",
     content: "couplegg2.jpg",
-    message: "Esqueça Chuck e Blair, agora somos nós que dominamos a cidade.",
+    message: "Esqueça Chuck e Blair, agora nós que dominamos a isso aqui.",
   },
   {
     type: "image",
     content: "/chicobento.jpg",
-    message: "Quem diria que meu Chico Bento conquistaria até o shopping...",
+    message: "Mas o primeiro passeio no shopping é inesquicível, né?",
   },
   {
     type: "image",
     content: "/milky.jpeg",
-    message:
-      "E com você cada momento é mais doce como um milkshake do Milky Moo.",
+    message: "E com você cada momento é gostoso como Milky Moo.",
   },
 ];
