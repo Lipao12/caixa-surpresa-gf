@@ -18,6 +18,7 @@ function App() {
     | null
     | undefined
   >();
+  let i = 0;
 
   const handleOpenBox = () => {
     setSurprise(MainGift);
@@ -32,22 +33,20 @@ function App() {
         {
           type: "message",
           content:
-            "Criatividade acabou, meu bem. 😳🙄😶\n Se quiser ver as mensagens de novo tu tem que atualizar a página.\n Ahh, só mais uma coisa, espero que tenha percebido algumas frases de música que utilizei (sem ser nas músicas) e a referência as falas daquele cara esquisito de Gossip 😉 \n É noix, minha gata! 🤍",
+            "Criatividade acabou, meu bem. 😳🙄😶\n Se quiser ver as mensagens de novo tu tem que atualizar a página.\n Ahh, só mais uma coisa, espero que tenha percebido algumas referências as falas daquele cara esquisito de Gossip 😉 \n É noix, minha gata! 🤍",
         },
       ];
     }
 
     // Select random surprise
-    const rand_const = Math.floor(Math.random() * updatedSurprises.length);
-    const randomSurprise = updatedSurprises[rand_const];
+    //const rand_const = Math.floor(Math.random() * updatedSurprises.length);
+    const randomSurprise = updatedSurprises[i];
     setSurprise(randomSurprise);
 
     // Remove the selected surprise from the array
-    updatedSurprises = updatedSurprises.filter(
-      (_, index) => index !== rand_const
-    );
+    updatedSurprises = updatedSurprises.filter((_, index) => index !== i);
     setSurprises(updatedSurprises);
-
+    i = i + 1;
     setIsOpen(true);
     setIsTheMain(false);
   };
